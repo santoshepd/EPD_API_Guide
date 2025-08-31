@@ -1713,7 +1713,7 @@ get_trading_volume() {
 # Function to get compliance data
 get_compliance_data() {
     local state=$1
-    local year=${2:-2024}
+    local year=-2024
     
     echo "📋 Fetching $state REC compliance data for $year..."
     
