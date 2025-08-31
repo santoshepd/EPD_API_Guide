@@ -909,7 +909,7 @@ class AncillaryServicesAPI:
         data = response.json()
         
         print(f"⚡ {iso} {service_type} Regulation Data:")
-        print(f"   💰 Clearing Price: ${data['clearing_price']:.2f}/MW")
+        print(f"   💰 Clearing Price: 'clearing_price'")
         print(f"   📊 Capacity: {data['capacity']:,} MW")
         print(f"   🎯 Utilization: {data['utilization']:.1f}%")
         
@@ -933,7 +933,7 @@ class AncillaryServicesAPI:
         data = response.json()
         
         print(f"🔋 {iso} {reserve_type} Reserves:")
-        print(f"   💰 Price: ${data['price']:.2f}/MWh")
+        print(f"   💰 Price: ")
         print(f"   📈 Requirement: {data['requirement']:,} MW")
         print(f"   ✅ Available: {data['available']:,} MW")
         
@@ -1181,7 +1181,7 @@ caiso_reg = api.get_regulation_data('CAISO', 'RegDown')`,
           curl: `#!/bin/bash
 
 # Advanced Ancillary Services API Script
-API_KEY="${ENERGY_API_KEY:-your-api-key-here}"
+API_KEY="your-api-key-here"
 BASE_URL="https://api.energy-platform.com/v1"
 
 # Function to get regulation data
@@ -1329,7 +1329,7 @@ class RECMarketAPI:
         data = response.json()
         
         print(f"☀️ {state} SREC Pricing ({vintage}):")
-        print(f"   💰 Current Price: ${data['current_price']:.2f}/MWh")
+        print(f"   💰 Current Price: 'current_price'")
         print(f"   📈 30-day High: ${data['high_30d']:.2f}")
         print(f"   📉 30-day Low: ${data['low_30d']:.2f}")
         print(f"   📊 Volume: {data['volume']:,} MWh")
