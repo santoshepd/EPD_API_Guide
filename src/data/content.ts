@@ -1826,8 +1826,8 @@ class UtilityPricingAPI:
         data = response.json()
         
         print(f"🏠 {utility_id} Residential Rates ({rate_schedule}):")
-        print(f"   ⚡ Energy Rate: ${data['energy_rate']:.4f}/kWh")
-        print(f"   🔌 Basic Charge: ${data['basic_charge']:.2f}/month")
+        print(f"   ⚡ Energy Rate: ")
+        print(f"   🔌 Basic Charge: ")
         
         if 'tier_rates' in data:
             print("   📊 Tiered Rates:")
