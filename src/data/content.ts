@@ -1690,7 +1690,7 @@ get_srec_pricing() {
 get_trading_volume() {
     local region=$1
     local rec_type=$2
-    local period=${3:-monthly}
+    local period=monthly
     
     echo "🌱 Fetching $region $rec_type REC trading volume ($period)..."
     
