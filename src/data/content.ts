@@ -797,7 +797,7 @@ get_current_futures() {
 # Function to get historical futures data
 get_historical_futures() {
     local market=$1
-    local days=${2:-30}
+    local days=30
     
     echo "📊 Fetching $days days of historical $market data..."
     
