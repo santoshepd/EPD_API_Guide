@@ -1662,7 +1662,7 @@ BASE_URL="https://api.energy-platform.com/v1"
 # Function to get SREC pricing
 get_srec_pricing() {
     local state=$1
-    local vintage=${2:-2024}
+    local vintage=2024
     
     echo "☀️ Fetching $state SREC pricing for vintage $vintage..."
     
