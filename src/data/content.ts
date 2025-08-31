@@ -1832,7 +1832,7 @@ class UtilityPricingAPI:
         if 'tier_rates' in data:
             print("   📊 Tiered Rates:")
             for tier in data['tier_rates']:
-                print(f"      Tier {tier['tier']}: ${tier['rate']:.4f}/kWh (up to {tier['limit']} kWh)")
+                print(f"      Tier {tier['tier']}: ")
         
         return data
     
