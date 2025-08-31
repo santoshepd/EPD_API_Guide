@@ -561,8 +561,8 @@ current_ng = api.get_current_futures('henry-hub', '2024-03')
 
 # Get 30 days of WTI crude oil history
 wti_history = api.get_historical_data('wti', days=30)
-print(f"WTI Price Range: ${wti_history['price'].min():.2f} - ${wti_history['price'].max():.2f}")`,
-          javascript: `// Professional Energy Futures API Client
+print(f"WTI Price Range: price'].min():.2f} - 'price'].max():.2f}")`,
+          `// Professional Energy Futures API Client
 class EnergyFuturesAPI {
   constructor(apiKey) {
     this.apiKey = apiKey;
