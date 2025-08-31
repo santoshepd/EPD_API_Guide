@@ -522,7 +522,7 @@ class EnergyFuturesAPI:
         
         data = response.json()
         print(f"📈 {market.upper()} Futures:")
-        print(f"   💰 Current Price: ${data['price']:.2f}")
+        print(f"   💰 Current Price: 'price'}")
         print(f"   📊 Volume: {data['volume']:,}")
         print(f"   ⏰ Last Updated: {data['timestamp']}")
         
