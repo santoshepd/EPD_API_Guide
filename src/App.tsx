@@ -12,7 +12,10 @@ function AppContent() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleSectionInView = (sectionId: string) => {
+    // Only update if it's different to prevent unnecessary re-renders
+    if (sectionId !== activeSection) {
     setActiveSection(sectionId);
+    }
   };
 
   return (
