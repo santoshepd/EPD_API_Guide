@@ -413,7 +413,7 @@ end`,
           curl: `#!/bin/bash
 
 # Secure EnergyAPI Authentication Script
-API_KEY="${ENERGY_API_KEY:-your-api-key-here}"
+API_KEY="your-api-key-here"
 BASE_URL="https://api.energy-platform.com/v1"
 
 # Check if API key is set
