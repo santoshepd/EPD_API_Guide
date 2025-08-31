@@ -1330,8 +1330,8 @@ class RECMarketAPI:
         
         print(f"☀️ {state} SREC Pricing ({vintage}):")
         print(f"   💰 Current Price: 'current_price'")
-        print(f"   📈 30-day High: ${data['high_30d']:.2f}")
-        print(f"   📉 30-day Low: ${data['low_30d']:.2f}")
+        print(f"   📈 30-day High: ")
+        print(f"   📉 30-day Low: ")
         print(f"   📊 Volume: {data['volume']:,} MWh")
         
         return data
@@ -1656,7 +1656,7 @@ ca_compliance = api.get_compliance_data('CA', 2024)`,
           curl: `#!/bin/bash
 
 # Professional REC Market API Script
-API_KEY="${ENERGY_API_KEY:-your-api-key-here}"
+API_KEY="your-api-key-here"
 BASE_URL="https://api.energy-platform.com/v1"
 
 # Function to get SREC pricing
@@ -1854,9 +1854,9 @@ class UtilityPricingAPI:
         data = response.json()
         
         print(f"🏢 {utility_id} Commercial Rates ({rate_class}):")
-        print(f"   ⚡ Energy Rate: ${data['energy_rate']:.4f}/kWh")
-        print(f"   🔋 Demand Charge: ${data['demand_charge']:.2f}/kW")
-        print(f"   📅 Customer Charge: ${data['customer_charge']:.2f}/month")
+        print(f"   ⚡ Energy Rate: ")
+        print(f"   🔋 Demand Charge: ")
+        print(f"   📅 Customer Charge: ")
         
         return data
     
