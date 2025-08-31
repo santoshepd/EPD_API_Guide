@@ -1188,7 +1188,7 @@ BASE_URL="https://api.energy-platform.com/v1"
 get_regulation_data() {
     local iso=$1
     local service_type=$2
-    local date=${3:-$(date +%Y-%m-%d)}
+    
     
     echo "⚡ Fetching $iso $service_type regulation data for $date..."
     
